@@ -21,6 +21,8 @@ Route::get('/shop/{id}','ShopController@show')->name('shop.detail');
 //お店削除機能
 Route::delete('/shop/{id}','ShopController@destroy')->name('shop.destroy');
 
+
+
 //ドメイン名だけの場合はshopsにリダイレクト→結果indexアクションへいく
 Route::get('/', function () {
     return redirect('/shops');
